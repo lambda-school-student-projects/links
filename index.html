@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      body {
+        background-color: #16161a;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+      }
 
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #7f5af0;
+        display: flex;
+        align-items: center;
+      }
+
+      .link a {
+        color: #fffffe;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        padding: 5px;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 420px;
+        flex-grow: 1;
+      }
+    </style>
   </head>
   <body>
-    My link in bio
-    <div class="banner">
-      <img src="https://avatars.githubusercontent.com/u/44586402?v=4" alt="profile headshot">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img class="banner-image" src="https://avatars.githubusercontent.com/u/44586402?v=4" alt="profile headshot">
+      </div>
 
-    <div class="name">
-      Joshua Kaunert
-    </div>
+      <div class="name">
+        Joshua Kaunert
+      </div>
 
-    <div class="social-icons">
-      <a href="https://github.com/jkaunert" target="_blank">Github</a>
-      <a href="https://linkedin.com/in/jkaunert" target="_blank">LinkedIn</a>
-      <a href="https://dev.to/jkaunert" target="_blank">Dev.to</a>
-    </div>
+      <div class="social-icons">
+        <a href="https://github.com/jkaunert" target="_blank">Github</a>
+        <a href="https://linkedin.com/in/jkaunert" target="_blank">LinkedIn</a>
+        <a href="https://dev.to/jkaunert" target="_blank">Dev.to</a>
+      </div>
 
-    <div class="link">
-      <img src="https://kbd.news/img/kbdnews_128.png">
-      <a href="https://kbd.news/" target="_blank">Keyboard Builders' Digest</a>
-    </div>
+      <div class="link">
+        <img class="thumbnail" src="https://kbd.news/img/kbdnews_128.png">
+        <a href="https://kbd.news/" target="_blank">Keyboard Builders' Digest</a>
+      </div>
 
-    <div class="link">
-      <img src="https://fatbobman.com/_astro/apple-touch-icon.2312227635.RNVrzb6f.png">
-      <a href="https://fatbobman.com/en/" target="_blank">Fatbobman's Blog</a>
-    </div>
+      <div class="link">
+        <img class="thumbnail" src="https://fatbobman.com/_astro/apple-touch-icon.2312227635.RNVrzb6f.png">
+        <a href="https://fatbobman.com/en/" target="_blank">Fatbobman's Blog</a>
+      </div>
 
-    <div class="link">
-      <img src="https://www.qatsi.org/images/godfrey.gif">
-      <a href="https://www.youtube.com/watch?v=vuI_nCADnW0" target="_blank">'Evidence' - A short film by Godfrey Reggio</a>
+      <div class="link">
+        <img class="thumbnail" src="https://www.qatsi.org/images/godfrey.gif">
+        <a href="https://www.youtube.com/watch?v=vuI_nCADnW0" target="_blank">'Evidence' - A short film by Godfrey Reggio</a>
+      </div>
     </div>
-
   </body>
 </html>
